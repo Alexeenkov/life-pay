@@ -88,10 +88,17 @@ h6 {
 
 
 /* ------------------------general-------------------- */
+html {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
   min-width: 320px;
+  height: 100%;
+  max-width: 100%;
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
@@ -125,6 +132,7 @@ html.lock {
   &--basic {
     font-size: 22px;
     text-align: center;
+    line-height: 1.36;
   }
 
   span {
@@ -136,6 +144,7 @@ html.lock {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   padding: 10px;
   width: 100%;
   max-width: 294px;
@@ -156,12 +165,7 @@ html.lock {
 
   &__title {
     margin-bottom: 16px;
-    font-size: 22px;
     line-height: 1.36;
-
-    &--basic {
-      font-size: 22px;
-    }
   }
 
   &__subtitle {
@@ -200,6 +204,10 @@ html.lock {
   background-image: url('../img/svg/pixels-1.svg');
   background-repeat: no-repeat;
   background-position: center top;
+
+  &--bottom-indent {
+    margin-bottom: 54px;
+  }
 
   &__title {
     margin-bottom: 64px;

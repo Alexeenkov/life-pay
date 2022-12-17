@@ -17,24 +17,27 @@
 	<link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<!-- Подключение файлов CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Подключение важных JS-скриптов. Подключаются вверху для обеспечения правильной работы остальных скриптов -->
+	<script src="lib/jquery/jquery-3.6.2.min.js"></script>
+	<script src="js/script.js"></script>
 
 	<title>Алексеенков Илья - тестовое задание</title>
 </head>
 
 <body>
-	<main class="wrapper">
+	<div class="wrapper">
 		<section class="first-screen first-screen--bottom-indent">
 			<h1 class="first-screen__title title"> Мобильный эквайринг с комиссией <span>от 1,2%</span> </h1>
 			<div class="first-screen__subtitle"> Принимайте оплату на выезде — любым удобным способом </div>
 			<picture class="first-screen__img">
-				<source type="image/webp" srcset="img/webp/calculator_1x.webp, img/webp/calculator_2x.webp 2x">
-				<source type="image/jpeg" srcset="img/calculator_1x.png, img/calculator_2x.png 2x">
-				<img src="img/calculator_1x.png" alt="Мобильный эквайринг с комиссией от 1,2%" title="Мобильный эквайринг с комиссией от 1,2%">
+				<source type="image/webp" srcset="img/webp/calculator.webp, img/webp/calculator_2x.webp 2x">
+				<source type="image/jpeg" srcset="img/calculator.png, img/calculator_2x.png 2x">
+				<img src="img/calculator.png" alt="Мобильный эквайринг с комиссией от 1,2%" title="Мобильный эквайринг с комиссией от 1,2%">
 			</picture>
 			<button type="button" class="first-screen__button button"> Подключить </button>
 		</section>
 
-		<section class="triggers">
+		<section class="triggers triggers--bottom-indent">
 			<h2 class="triggers__title title title--basic">Платежи <span>в&nbsp;любой&nbsp;точке&nbsp;продаж</span></h2>
 			<ul class="triggers__list">
 				<li class="triggers__item trigger">
@@ -105,9 +108,12 @@
 				<button type="button" class="triggers__button button"> То, что надо! </button>
 			</div>
 		</section>
-	</main>
+	</div>
 
-	<script src="lib/jquery/jquery-3.6.2.min.js"></script>
+	<?php //if ($_GET['types-slider'] === 'true') {
+		include 'components/types/types.php';
+	//} ?>
+
 	<script src="lib/slick/slick.min.js"></script>
 </body>
 
