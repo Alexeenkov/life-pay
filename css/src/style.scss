@@ -1,8 +1,8 @@
 // -------------------variables------------------
 $accent-color: #FFDD2D;
 $title-color: #254085;
+$second-color: #428ECC;
 $accent-title-color: #FE5339;
-$main-text-color: #000;
 // -------------------fonts------------------
 
 @font-face {
@@ -96,6 +96,7 @@ body {
   font-style: normal;
   overflow-x: hidden;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 body.lock,
@@ -121,6 +122,11 @@ html.lock {
   color: $title-color;
   font-weight: 700;
 
+  &--basic {
+    font-size: 22px;
+    text-align: center;
+  }
+
   span {
     color: $accent-title-color;
   }
@@ -138,21 +144,28 @@ html.lock {
   border-radius: 10px;
   color: #222222;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* ------------------------blocks-------------------- */
 
 .first-screen {
+  &--bottom-indent {
+    margin-bottom: 22px;
+  }
 
   &__title {
     margin-bottom: 16px;
     font-size: 22px;
     line-height: 1.36;
+
+    &--basic {
+      font-size: 22px;
+    }
   }
 
   &__subtitle {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     color: #0F348C;
     font-size: 12px;
     line-height: 1.5;
@@ -163,17 +176,85 @@ html.lock {
     display: block;
     max-height: 340px;
     height: 100%;
-    margin-bottom: 54px;
+    width: 105%;
+    margin-left: -7px;
+    margin-bottom: 50px;
+
     img {
       display: block;
       height: 100%;
       width: 100%;
+      max-height: inherit;
       object-fit: contain;
       object-position: center top;
     }
   }
 
   &__button {
-    
+    font-size: 16px;
+  }
+}
+
+.triggers {
+  padding-top: 82px;
+  background-image: url('../img/svg/pixels-1.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &__title {
+    margin-bottom: 64px;
+  }
+
+  &__list {
+    margin-bottom: 64px;
+  }
+
+  &__item {
+    &:nth-child(n+2) {
+      margin-top: 48px;
+    }
+  }
+
+  &__button-container {}
+
+  &__description {
+    margin-bottom: 27px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.39;
+    text-align: center;
+    color: $second-color;
+  }
+
+  &__button {}
+}
+
+.trigger {
+
+  &__icon {
+    max-height: 40px;
+    max-width: 40px;
+    margin-bottom: 11.6px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $second-color;
+    }
+  }
+
+  &__content {}
+
+  &__title {
+    margin-bottom: 10px;
+    color: $second-color;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  &__description {
+    color: #242424;
+    line-height: 1.56;
   }
 }
