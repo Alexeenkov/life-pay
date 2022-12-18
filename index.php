@@ -124,6 +124,7 @@
 			<div class="cost__description wrapper">
 				Прозрачная комиссия на все виды эквайринга. Процент зависит только от вашей выручки и вида деятельности
 			</div>
+			<button type="button" class="cost__button cost__button--desktop button"> Подключить </button>
 		</div>
 		<div class="cost__table">
 			<h3 class="cost__table-title title">Комиссия за использование эквайринга LIFE PAY — <span>от&nbsp;1,2%&nbsp;до&nbsp;1,9%</span></h3>

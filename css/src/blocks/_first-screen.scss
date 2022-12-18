@@ -1,7 +1,7 @@
 .first-screen {
     position: relative;
 
-    @media (min-width: 500px) {
+    @media (min-width: 810px) {
         max-width: 1045px;
         margin: 0 auto;
     }
@@ -9,7 +9,11 @@
     &--bottom-indent {
         margin-bottom: 22px;
 
-        @media (min-width: 500px) {
+        @media (min-width: 550px) {
+            margin-bottom: 70px;
+        }
+
+        @media (min-width: 810px) {
             margin-bottom: 151px;
         }
     }
@@ -17,8 +21,18 @@
     &__title {
         margin-bottom: 16px;
         line-height: 1.36;
+        font-size: 22px;
 
-        @media (min-width: 500px) {
+        @media (min-width: 400px) {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        @media (min-width: 550px) {
+            font-size: 38px;
+        }
+
+        @media (min-width: 810px) {
             font-size: 38px;
             line-height: 1.26;
             margin-bottom: 17.5px;
@@ -31,7 +45,12 @@
         font-size: 12px;
         line-height: 1.5;
 
-        @media (min-width: 500px) {
+        @media (min-width: 400px) {
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+
+        @media (min-width: 810px) {
             margin-bottom: 40px;
             font-size: 20px;
             line-height: 1.6;
@@ -41,7 +60,7 @@
 
     &__title,
     &__subtitle {
-        @media (min-width: 500px) {
+        @media (min-width: 810px) {
             max-width: 491px;
             width: 63%;
         }
@@ -56,7 +75,11 @@
         margin-left: -7px;
         margin-bottom: 50px;
 
-        @media (min-width: 500px) {
+        @media (min-width: 550px) {
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: 810px) {
             position: absolute;
             top: 0;
             right: 0;
@@ -78,5 +101,13 @@
 
     &__button {
         font-size: 16px;
+
+        @media (min-width: 400px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) and (max-width: 809px) {
+            margin: 0 auto;
+        }
     }
 }

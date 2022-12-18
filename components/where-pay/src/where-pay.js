@@ -6,13 +6,7 @@ jQuery(function () {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 480,
+                breakpoint: 550,
                 settings: {
                     slidesToShow: 1,
                 }
