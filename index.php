@@ -113,9 +113,44 @@
 
 	<?php include 'components/types/types.php'; ?>
 
-	<?php //if ($_GET['show-slider'] !== null) {
+	<?php if (!empty($_GET['show-slider']) && $_GET['show-slider'] === 'true') {
 		include 'components/where-pay/where-pay.php';
-	//} ?>
+	} ?>
+
+	<div class="cost">
+		<h2 class="cost__title title title--basic wrapper"><span>Стоимость</span> мобильного эквайринга</h2>
+		<div class="cost__description wrapper">
+			Прозрачная комиссия на все виды эквайринга. Процент зависит только от вашей выручки и вида деятельности
+		</div>
+		<div class="cost__table">
+			<h3 class="cost__table-title title">Комиссия за использование эквайринга LIFE PAY — <span>от&nbsp;1,2%&nbsp;до&nbsp;1,9%</span></h3>
+			<div class="cost__content">
+				<table>
+					<thead>
+						<tr>
+							<th>Вид деятельности</th>
+							<th>Комиссия за эквайринг</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Фастфуд</th>
+							<th>1,2%</th>
+						</tr>
+						<tr>
+							<th>Продуктовые супермаркеты</th>
+							<th>1,5%</th>
+						</tr>
+						<tr>
+							<th>Прочее</th>
+							<th>1,9%</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<button type="button" class="cost__button button"> Подключить </button>
+	</div>
 
 	<script src="lib/slick/slick.min.js"></script>
 </body>

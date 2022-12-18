@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-position: center top;
 
+    &--bottom-indent {
+        margin-bottom: 7px;
+    }
+
     &__title {
         margin-bottom: 29px;
         color: $second-color;
@@ -13,6 +17,7 @@
 
     &__slider-wrapper {
         position: relative;
+        margin-bottom: 60px;
     }
 
     &__slider {}

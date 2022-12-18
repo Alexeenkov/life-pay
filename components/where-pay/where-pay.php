@@ -3,7 +3,7 @@
     includeCSS('components/where-pay/where-pay.css');
 </script>
 
-<article class="where-pay">
+<article class="where-pay where-pay--bottom-indent">
     <h2 class="where-pay__title title title--basic wrapper">
         Где можно принимать платежи
     </h2>
@@ -72,6 +72,7 @@
         </div>
         <div class="where-pay__arrows js-pay-arrows"></div>
     </div>
+    <button type="button" class="triggers__button button"> Хочу </button>
 </article>
 
 <script src="components/where-pay/where-pay.js"></script>

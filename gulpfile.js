@@ -76,7 +76,7 @@ gulp.task("commonScss", commonScss);
 gulp.task("commonJs", commonJs);
 
 let watch = function () {
-    gulp.watch(Path.filesCore + "*.scss", commonScss);
+    gulp.watch(Path.filesCore + "**/*.scss", commonScss);
     gulp.watch(Path.filesCore + "*.js", commonJs);
 };
 
