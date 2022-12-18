@@ -28,7 +28,7 @@
 	<?php include 'components/svg-sprite/sprite.svg'; ?>
 	<div class="wrapper">
 		<section class="first-screen first-screen--bottom-indent">
-			<h1 class="first-screen__title title"> Мобильный эквайринг с комиссией <span>от 1,2%</span> </h1>
+			<h1 class="first-screen__title title"> Мобильный эквайринг с&nbsp;комиссией <span>от 1,2%</span> </h1>
 			<div class="first-screen__subtitle"> Принимайте оплату на выезде — любым удобным способом </div>
 			<picture class="first-screen__img">
 				<source type="image/webp" srcset="img/webp/calculator.webp, img/webp/calculator_2x.webp 2x">
@@ -113,14 +113,17 @@
 
 	<?php include 'components/types/types.php'; ?>
 
-	<?php if (!empty($_GET['show-slider']) && $_GET['show-slider'] === 'true') {
-		include 'components/where-pay/where-pay.php';
-	} ?>
+	<?php //if (!empty($_GET['show-slider']) && $_GET['show-slider'] === 'true') {
+	include 'components/where-pay/where-pay.php';
+	//} 
+	?>
 
 	<div class="cost">
-		<h2 class="cost__title title title--basic wrapper"><span>Стоимость</span> мобильного эквайринга</h2>
-		<div class="cost__description wrapper">
-			Прозрачная комиссия на все виды эквайринга. Процент зависит только от вашей выручки и вида деятельности
+		<div class="cost__container">
+			<h2 class="cost__title title title--basic wrapper"><span>Стоимость</span> мобильного эквайринга</h2>
+			<div class="cost__description wrapper">
+				Прозрачная комиссия на все виды эквайринга. Процент зависит только от вашей выручки и вида деятельности
+			</div>
 		</div>
 		<div class="cost__table">
 			<h3 class="cost__table-title title">Комиссия за использование эквайринга LIFE PAY — <span>от&nbsp;1,2%&nbsp;до&nbsp;1,9%</span></h3>
@@ -149,7 +152,9 @@
 				</table>
 			</div>
 		</div>
-		<button type="button" class="cost__button button"> Подключить </button>
+		<div class="cost__buttons wrapper">
+			<button type="button" class="cost__button button"> Подключить </button>
+		</div>
 	</div>
 
 	<script src="lib/slick/slick.min.js"></script>

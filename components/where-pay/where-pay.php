@@ -46,7 +46,7 @@
                     <img src="img/where-pay-2.jpg" alt="Смарт-терминал" title="Смарт-терминал">
                 </picture>
                 <div class="card__content">
-                    <h3 class="card__title title"> В любой точке на карте </h3>
+                    <h3 class="card__title title"> В любой точке на&nbsp;карте </h3>
                     <ul class="card__list">
                         <li class="card__item card__item--credit-card">
                             <svg>
@@ -72,7 +72,9 @@
         </div>
         <div class="where-pay__arrows js-pay-arrows"></div>
     </div>
-    <button type="button" class="triggers__button button"> Хочу </button>
+    <div class="wrapper">
+        <button type="button" class="where-pay__button button wrapper"> Хочу </button>
+    </div>
 </article>
 
 <script src="components/where-pay/where-pay.js"></script>
