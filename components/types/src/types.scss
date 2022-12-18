@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     background-position: left top, right top;
 
+    &--bottom-indent {
+        margin-bottom: 22px;
+    }
+
     &__title {
         margin-bottom: 20px;
     }
@@ -26,38 +30,6 @@
         flex-grow: 1;
         height: inherit;
         margin: 20px;
-    }
-
-    &__arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        width: 39px;
-        height: 39px;
-        background: rgba(63, 141, 203, 0.56);
-        border-radius: 50%;
-
-        &.slick-disabled {
-            display: none !important;
-        }
-
-        &--next {
-            right: 10px;
-            svg {
-                margin-left: 3px;
-            }
-        }
-
-        &--prev {
-            left: 10px;
-            svg {
-                transform: rotate(180deg);
-            }
-        }
     }
 }
 

@@ -25,6 +25,7 @@
 </head>
 
 <body>
+	<?php include 'components/svg-sprite/sprite.svg'; ?>
 	<div class="wrapper">
 		<section class="first-screen first-screen--bottom-indent">
 			<h1 class="first-screen__title title"> Мобильный эквайринг с комиссией <span>от 1,2%</span> </h1>
@@ -110,8 +111,10 @@
 		</section>
 	</div>
 
-	<?php //if ($_GET['types-slider'] === 'true') {
-		include 'components/types/types.php';
+	<?php include 'components/types/types.php'; ?>
+
+	<?php //if ($_GET['show-slider'] !== null) {
+		include 'components/where-pay/where-pay.php';
 	//} ?>
 
 	<script src="lib/slick/slick.min.js"></script>

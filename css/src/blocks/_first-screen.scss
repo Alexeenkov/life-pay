@@ -1,0 +1,40 @@
+.first-screen {
+    &--bottom-indent {
+        margin-bottom: 22px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        line-height: 1.36;
+    }
+
+    &__subtitle {
+        margin-bottom: 32px;
+        color: #0F348C;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    &__img {
+        position: relative;
+        display: block;
+        max-height: 340px;
+        height: 100%;
+        width: 105%;
+        margin-left: -7px;
+        margin-bottom: 50px;
+
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            max-height: inherit;
+            object-fit: contain;
+            object-position: center top;
+        }
+    }
+
+    &__button {
+        font-size: 16px;
+    }
+}

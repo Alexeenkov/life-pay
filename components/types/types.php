@@ -3,7 +3,7 @@
     includeCSS('components/types/types.css');
 </script>
 
-<article class="types">
+<article class="types types--bottom-indent">
     <h2 class="types__title title title--basic wrapper">
         Что выбрать
     </h2>
