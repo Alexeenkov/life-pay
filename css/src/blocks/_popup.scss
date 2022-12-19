@@ -112,30 +112,6 @@
         font-size: 18px;
         transition: .3s;
 
-        &::-webkit-input-placeholder {
-            color: #262626;
-            font-size: 16px;
-            opacity: 0.8;
-        }
-
-        &::-moz-placeholder {
-            color: #262626;
-            font-size: 16px;
-            opacity: 0.8;
-        }
-
-        &:-ms-input-placeholder {
-            color: #262626;
-            font-size: 16px;
-            opacity: 0.8;
-        }
-
-        &::-ms-input-placeholder {
-            color: #262626;
-            font-size: 16px;
-            opacity: 0.8;
-        }
-
         &::placeholder {
             color: #262626;
             opacity: 0.8;
