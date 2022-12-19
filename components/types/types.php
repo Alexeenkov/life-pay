@@ -1,6 +1,8 @@
 <script>
     includeCSS('lib/slick/slick.css');
     includeCSS('components/types/types.css');
+    includeJS('lib/slick/slick.min.js');
+    includeJS('components/types/types.js');
 </script>
 
 <article class="types types--bottom-indent">
@@ -58,5 +60,3 @@
         <div class="types__arrows js-types-arrows"></div>
     </div>
 </article>
-
-<script src="components/types/types.js"></script>

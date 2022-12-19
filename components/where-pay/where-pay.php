@@ -1,6 +1,8 @@
 <script>
     includeCSS('lib/slick/slick.css');
     includeCSS('components/where-pay/where-pay.css');
+    includeJS('lib/slick/slick.min.js');
+    includeJS('components/where-pay/where-pay.js');
 </script>
 
 <article class="where-pay where-pay--bottom-indent">
@@ -73,8 +75,6 @@
         <div class="where-pay__arrows js-pay-arrows"></div>
     </div>
     <div class="wrapper">
-        <button type="button" class="where-pay__button button wrapper"> Хочу </button>
+        <a href="#popup" class="where-pay__button button wrapper js-open-popup"> Хочу </a>
     </div>
 </article>
-
-<script src="components/where-pay/where-pay.js"></script>

@@ -35,7 +35,7 @@
 				<source type="image/jpeg" srcset="img/calculator.png, img/calculator_2x.png 2x">
 				<img src="img/calculator.png" alt="Мобильный эквайринг с комиссией от 1,2%" title="Мобильный эквайринг с комиссией от 1,2%">
 			</picture>
-			<button type="button" class="first-screen__button button"> Подключить </button>
+			<a href="#popup" class="first-screen__button button js-open-popup"> Подключить </a>
 		</section>
 
 		<section class="triggers triggers--bottom-indent">
@@ -106,7 +106,7 @@
 				<div class="triggers__description">
 					Вы платите меньше, если используете кассу не постоянно
 				</div>
-				<button type="button" class="triggers__button button"> То, что надо! </button>
+				<a href="#popup" class="triggers__button button js-open-popup"> То, что надо! </a>
 			</div>
 		</section>
 	</div>
@@ -124,7 +124,7 @@
 			<div class="cost__description wrapper">
 				Прозрачная комиссия на все виды эквайринга. Процент зависит только от вашей выручки и вида деятельности
 			</div>
-			<button type="button" class="cost__button cost__button--desktop button"> Подключить </button>
+			<a href="#popup" class="cost__button cost__button--desktop button js-open-popup"> Подключить </a>
 		</div>
 		<div class="cost__table">
 			<h3 class="cost__table-title title">Комиссия за использование эквайринга LIFE PAY — <span>от&nbsp;1,2%&nbsp;до&nbsp;1,9%</span></h3>
@@ -154,11 +154,30 @@
 			</div>
 		</div>
 		<div class="cost__buttons wrapper">
-			<button type="button" class="cost__button button"> Подключить </button>
+			<a href="#popup" class="cost__button button js-open-popup"> Подключить </a>
 		</div>
 	</div>
 
-	<script src="lib/slick/slick.min.js"></script>
+	<aside class="popup js-popup" id="popup">
+		<div class="popup__body">
+			<div class="popup__content js-popup-content">
+				<button type="button" class="popup__close js-close-popup">
+					<svg>
+						<use xlink:href="#close"></use>
+					</svg>
+					<span class="visually-hidden">Закрыть модальное окно</span>
+				</button>
+				<h4 id='popup-title' class="popup__title title">Напишите свой номер телефона и <span>мы Вам перезвоним!</span></h4>
+				<form action="#0" method="POST" class="popup__form">
+					<input type="text" name="name" class="popup__input popup__name" placeholder="Введите имя" required>
+					<input type="tel" name="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" class="popup__input popup__tel mask" placeholder="Введите телефон" required>
+					<button type="submit" class="popup__button button">Отправить заявку</button>
+				</form>
+			</div>
+		</div>
+	</aside>
+
+	<script src="js/popup.js"></script>
 </body>
 
 </html>

@@ -45,7 +45,6 @@ let commonScss = function () {
 let commonJs = function () {
     return gulp
         .src(Path.filesCore + "*.js")
-        .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(babel())
         .pipe(uglify())
@@ -54,7 +53,6 @@ let commonJs = function () {
                 changeDirToParent(file);
             })
         )
-        .pipe(sourcemaps.write(''))
         .pipe(gulp.dest((file) => file.base));
 };
 

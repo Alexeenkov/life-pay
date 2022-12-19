@@ -1,2 +1,1 @@
-"use strict";function includeCSS(e){var n='link[href="'.concat(e,'"]');0===$(n).length&&$("head").append('<link rel="stylesheet" href="'.concat(e,'">'))}
-//# sourceMappingURL=script.js.map
+"use strict";function includeCSS(c){var n='link[href="'.concat(c,'"]');0===$(n).length&&$("head").append('<link rel="stylesheet" href="'.concat(c,'">'))}function includeJS(n){setTimeout(function(){var c='script[src="'.concat(n,'"]');0===$(c).length&&$("body").append('<script src="'.concat(n,'"><\/script>'))},0)}
