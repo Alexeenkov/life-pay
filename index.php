@@ -113,10 +113,9 @@
 
 	<?php include 'components/types/types.php'; ?>
 
-	<?php //if (!empty($_GET['show-slider']) && $_GET['show-slider'] === 'true') {
-	include 'components/where-pay/where-pay.php';
-	//} 
-	?>
+	<?php if (!empty($_GET['show-slider']) && $_GET['show-slider'] === 'true') {
+		include 'components/where-pay/where-pay.php';
+	} ?>
 
 	<div class="cost">
 		<div class="cost__container">
